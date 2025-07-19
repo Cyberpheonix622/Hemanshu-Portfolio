@@ -3,11 +3,45 @@
 import {Sheet, SheetContent, SheetTrigger} from "@/components/ui/sheet";
 import {usePathname} from 'next/navigation';
 import Link from "next/link";
-import {} from "react";
+import {CiMenuFries} from "react-icons/ci";
+
+
+const links = [
+    {
+      name: "Home",
+      path: "/",
+    },
+    {
+      name: "About",
+      path: "/about",
+    },
+    {
+      name: "Resume",
+      path: "/resume",
+    },
+    {
+      name: "Projects",
+      path: "/projects",
+    },
+    {
+      name: "Contact",
+      path: "/contact",
+    },
+];
 
 const MobileNav = () => {
+  const pathname = usePathname();
   return (
-    <nav></nav>
+    <Sheet>
+      <SheetTrigger className="flex justify-center items-center">
+        <CiMenuFries className="text-32px text-accent" />
+      </SheetTrigger>
+      <SheetContent className="flex flex-col">
+        <div>
+          Logo
+        </div>
+      </SheetContent>
+    </Sheet>
   );
 };
 
