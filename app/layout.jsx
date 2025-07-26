@@ -13,8 +13,8 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata = {
-  title: "My Next.js App",
-  description: "A Next.js application with custom fonts and layout",
+  title: "Portfolio",
+  description: "MY-Portfolio",
 };
 
 export default function RootLayout({ children }) {
