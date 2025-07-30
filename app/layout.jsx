@@ -16,7 +16,7 @@ export const metadata = {
   title: 'Hemanshu | Portfolio',
   description: 'Personal cybersecurity portfolio website of Hemanshu Moundekar',
   icons: {
-    icon: '/favicon.ico',
+    icon: '/logo.png',
   },
 };
 
