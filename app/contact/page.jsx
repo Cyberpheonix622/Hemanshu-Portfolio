@@ -62,14 +62,14 @@ const Contact = () => {
       className="py-6"
     >
       <div className="container mx-auto">
-        <div className="flex flex-col xl:flex-row gap-[30px] ">
+        <div className="flex flex-col xl:flex-row gap-[20px] ">
           {/* FORM */}
-          <div className="xl:h-[54%] order-2 xl:order-none">
-            <form onSubmit={handleSubmit} className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl">
-              <h3 className="text-4xl text-accent">To Reach Out</h3>
+          <div className="xl:h-[50%] order-2 xl:order-none">
+            <form onSubmit={handleSubmit} className="flex flex-col gap-4 p-10 bg-[#27272c] rounded-xl">
+              <h3 className="text-3xl text-accent">To Reach Out</h3>
               <p>To reach me out please contact me through the below form.</p>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6     ">
                 <Input name="firstname" value={form.firstname} onChange={handleChange} placeholder="First Name" required />
                 <Input name="lastname" value={form.lastname} onChange={handleChange} placeholder="Last Name" required />
                 <Input type="email" name="email" value={form.email} onChange={handleChange} placeholder="Email Address" required />
@@ -81,7 +81,7 @@ const Contact = () => {
                 value={form.message}
                 onChange={handleChange}
                 placeholder="Type Your Message Here"
-                className="h-[200px]"
+                className="h-[175px]"
                 required
               />
 

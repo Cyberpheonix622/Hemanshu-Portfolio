@@ -81,26 +81,26 @@ const Project = () => {
           <div className="w-full xl:w-[50%] xl:h-[460px] flex flex-col xl:justify-between order-2 xl:order-none">
             <div className="flex flex-col gap-[25px] h-[50%]">
               {/* Number */}
-              <div className="text-8xl leading-none font-extrabold text-transparent text-outline">
+              <div className="text-6xl leading-none font-extrabold text-transparent text-outline">
                 {project.num}
               </div>
               {/* Title */}
-              <h2 className="text-[36px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize">
+              <h2 className="text-[28px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize">
                 {project.title}
               </h2>
               {/* Category */}
-              <h2 className="text-5xl font-semibold text-transparent text-outline capitalize group-hover:text-accent transition-all duration-500">
+              <h2 className="text-xl capitalize group-hover:text-accent transition-all duration-500">
                 {project.category} project
               </h2>
               {/* Description */}
-              <p className="text-white/60">
+              <p className="text-sm text-white/60">
                 {project.description}
               </p>
               {/* Stack */}
-              <ul className="flex gap-4">
+              <ul className="flex gap-2">
                 {project.stack.map((item, index) => {
                   return(
-                    <li key={index} className="text-xl text-accent">
+                    <li key={index} className="text-normal text-accent">
                       {item.name}
                       {index !== project.stack.length - 1 && ","}
                     </li>
@@ -108,13 +108,13 @@ const Project = () => {
                 })}
               </ul>
               {/* Border */}
-              <div className="border border-white/20 gap-4"></div>
+              <div className="border border-white/20 gap-2"></div>
               {/* Button */}
               <div className="flex items-center gap-4">
                 <Link href={project.github}>
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
-                      <TooltipTrigger className="w-[70px] h-[70px] rounded-full flex justify-center items-center group">
+                      <TooltipTrigger className="w-[50px] h-[50px] rounded-full flex justify-center items-center group">
                         <BsGithub className="text-white text-5xl group-hover:text-accent"/>
                       </TooltipTrigger>
                       <TooltipContent>
@@ -130,7 +130,7 @@ const Project = () => {
             <Swiper
               spaceBetween={30}
               slidesPerView={1}
-              className="xl:h-[520px] mb-12"
+              className="xl:h-[420px] mb-12"
               onSlideChange={handleSlideChange}
             >
               {projects.map((project, index) => {
@@ -147,7 +147,7 @@ const Project = () => {
                     {/* Slider Button */}
                     <ProjectSliderBtns
                       containerStyles="flex gap-2 absolute right-0 bottom-[calc(50%_-_22px)] xl:bottom-0 z-20 w-full justify-between xl:w-max xl:justify-none"
-                      btnStyles="text-white hover:text-accent text-[22px] w-[44px] h-[44px] flex justify-center items-center transition-all"
+                      btnStyles="text-white hover:text-accent text-[22px] w-[44px] h-[44px] bg-primary/30 flex justify-center items-center transition-all"
                       iconsStyles="text-2xl" 
                     />
                   </SwiperSlide>

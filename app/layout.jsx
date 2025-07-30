@@ -13,8 +13,11 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata = {
-  title: "Portfolio",
-  description: "MY-Portfolio",
+  title: 'Hemanshu | Portfolio',
+  description: 'Personal cybersecurity portfolio website of Hemanshu Moundekar',
+  icons: {
+    icon: '/favicon.ico',
+  },
 };
 
 export default function RootLayout({ children }) {
