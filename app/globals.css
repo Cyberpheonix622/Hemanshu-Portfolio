@@ -24,3 +24,6 @@
     -webkit-text-stroke: 1px #00ff99;
   }
 }
+html, body {
+  overflow-x: hidden;
+}
